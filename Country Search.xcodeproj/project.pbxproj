@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		8B020E2A228EFC9700382909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B020E29228EFC9700382909 /* AppDelegate.swift */; };
-		8B020E2C228EFC9700382909 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B020E2B228EFC9700382909 /* ViewController.swift */; };
+		8B020E2C228EFC9700382909 /* CountrySearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B020E2B228EFC9700382909 /* CountrySearchTableViewController.swift */; };
 		8B020E2F228EFC9700382909 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B020E2D228EFC9700382909 /* Main.storyboard */; };
 		8B020E31228EFC9800382909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B020E30228EFC9800382909 /* Assets.xcassets */; };
 		8B020E34228EFC9800382909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B020E32228EFC9800382909 /* LaunchScreen.storyboard */; };
 		8B020E3F228EFC9800382909 /* Country_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B020E3E228EFC9800382909 /* Country_SearchTests.swift */; };
 		8B020E4A228EFC9800382909 /* Country_SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B020E49228EFC9800382909 /* Country_SearchUITests.swift */; };
+		8B3D5E30228F08DB00E21AE0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E2F228F08DB00E21AE0 /* Country.swift */; };
+		8B3D5E31228F08DB00E21AE0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E2F228F08DB00E21AE0 /* Country.swift */; };
+		8B3D5E32228F08DB00E21AE0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E2F228F08DB00E21AE0 /* Country.swift */; };
+		8B3D5E35228F08FD00E21AE0 /* ApiCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */; };
+		8B3D5E36228F08FD00E21AE0 /* ApiCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */; };
+		8B3D5E37228F08FD00E21AE0 /* ApiCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */; };
+		8B3D5E39228F0BC000E21AE0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E38228F0BC000E21AE0 /* Service.swift */; };
+		8B3D5E3A228F0BC000E21AE0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E38228F0BC000E21AE0 /* Service.swift */; };
+		8B3D5E3B228F0BC000E21AE0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E38228F0BC000E21AE0 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		8B020E26228EFC9700382909 /* Country Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B020E29228EFC9700382909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B020E2B228EFC9700382909 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B020E2B228EFC9700382909 /* CountrySearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchTableViewController.swift; sourceTree = "<group>"; };
 		8B020E2E228EFC9700382909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B020E30228EFC9800382909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B020E33228EFC9800382909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		8B020E45228EFC9800382909 /* Country SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Country SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B020E49228EFC9800382909 /* Country_SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_SearchUITests.swift; sourceTree = "<group>"; };
 		8B020E4B228EFC9800382909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3D5E2F228F08DB00E21AE0 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCountry.swift; sourceTree = "<group>"; };
+		8B3D5E38228F0BC000E21AE0 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,10 @@
 		8B020E28228EFC9700382909 /* Country Search */ = {
 			isa = PBXGroup;
 			children = (
+				8B3D5E2E228F08BB00E21AE0 /* Application Domain */,
+				8B3D5E2D228F087900E21AE0 /* Service Domain */,
 				8B020E29228EFC9700382909 /* AppDelegate.swift */,
-				8B020E2B228EFC9700382909 /* ViewController.swift */,
+				8B020E2B228EFC9700382909 /* CountrySearchTableViewController.swift */,
 				8B020E2D228EFC9700382909 /* Main.storyboard */,
 				8B020E30228EFC9800382909 /* Assets.xcassets */,
 				8B020E32228EFC9800382909 /* LaunchScreen.storyboard */,
@@ -123,6 +137,23 @@
 				8B020E4B228EFC9800382909 /* Info.plist */,
 			);
 			path = "Country SearchUITests";
+			sourceTree = "<group>";
+		};
+		8B3D5E2D228F087900E21AE0 /* Service Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */,
+				8B3D5E38228F0BC000E21AE0 /* Service.swift */,
+			);
+			path = "Service Domain";
+			sourceTree = "<group>";
+		};
+		8B3D5E2E228F08BB00E21AE0 /* Application Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D5E2F228F08DB00E21AE0 /* Country.swift */,
+			);
+			path = "Application Domain";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B020E2C228EFC9700382909 /* ViewController.swift in Sources */,
+				8B020E2C228EFC9700382909 /* CountrySearchTableViewController.swift in Sources */,
+				8B3D5E35228F08FD00E21AE0 /* ApiCountry.swift in Sources */,
+				8B3D5E39228F0BC000E21AE0 /* Service.swift in Sources */,
+				8B3D5E30228F08DB00E21AE0 /* Country.swift in Sources */,
 				8B020E2A228EFC9700382909 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3D5E31228F08DB00E21AE0 /* Country.swift in Sources */,
+				8B3D5E3A228F0BC000E21AE0 /* Service.swift in Sources */,
 				8B020E3F228EFC9800382909 /* Country_SearchTests.swift in Sources */,
+				8B3D5E36228F08FD00E21AE0 /* ApiCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3D5E32228F08DB00E21AE0 /* Country.swift in Sources */,
+				8B3D5E3B228F0BC000E21AE0 /* Service.swift in Sources */,
 				8B020E4A228EFC9800382909 /* Country_SearchUITests.swift in Sources */,
+				8B3D5E37228F08FD00E21AE0 /* ApiCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

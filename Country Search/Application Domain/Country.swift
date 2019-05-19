@@ -22,8 +22,6 @@ struct Country {
     let regionalBlocks: [String]
     let languages: [String]
     let currencies: [String]
-
-    var flag
 }
 
 extension Country {
@@ -39,8 +37,8 @@ extension Country {
             return "\($0.name) (\($0.symbol))"
         }
 
-        return Country(code: apiCountry.alpha3Code, name: apiCountry.name, area: Int(apiCountry.area),
-                       population: apiCountry.population, capital: apiCountry.population, region: apiCountry.region,
+        return Country(code: apiCountry.alpha2Code, name: apiCountry.name, area: Int(apiCountry.area),
+                       population: apiCountry.population, capital: apiCountry.capital, region: apiCountry.region,
                        regionalBlocks: regionalBlocs, languages: languages, currencies: currencies)
     }
 }

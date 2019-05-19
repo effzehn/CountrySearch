@@ -109,10 +109,10 @@
 		8B020E28228EFC9700382909 /* Country Search */ = {
 			isa = PBXGroup;
 			children = (
+				8BFA8A852291892C00E536D1 /* View */,
 				8B3D5E2E228F08BB00E21AE0 /* Application Domain */,
 				8B3D5E2D228F087900E21AE0 /* Service Domain */,
 				8B020E29228EFC9700382909 /* AppDelegate.swift */,
-				8B020E2B228EFC9700382909 /* CountrySearchTableViewController.swift */,
 				8B020E2D228EFC9700382909 /* Main.storyboard */,
 				8B020E30228EFC9800382909 /* Assets.xcassets */,
 				8B020E32228EFC9800382909 /* LaunchScreen.storyboard */,
@@ -154,6 +154,14 @@
 				8B3D5E2F228F08DB00E21AE0 /* Country.swift */,
 			);
 			path = "Application Domain";
+			sourceTree = "<group>";
+		};
+		8BFA8A852291892C00E536D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B020E2B228EFC9700382909 /* CountrySearchTableViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

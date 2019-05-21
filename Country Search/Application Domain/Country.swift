@@ -6,16 +6,13 @@
 //  Copyright © 2019 A. Hoffmann. All rights reserved.
 //
 
-import Foundation
-
-struct CountryList {
-    var countries: [Country]
-}
+import CoreLocation
 
 struct Country {
     let code: String
     let name: String
     let area: Int
+    let latLong: [Double]
     let population: Int
     let capital: String
     let region: String
@@ -24,21 +21,17 @@ struct Country {
     let currencies: [String]
 }
 
-extension Country {
-
-    static func create(with apiCountry: ApiCountry) -> Country {
-        let regionalBlocs = apiCountry.regionalBlocs.map {
-            return $0.name
-        }
-        let languages = apiCountry.languages.map {
-            return $0.name
-        }
-        let currencies = apiCountry.currencies.map {
-            return "\($0.name) (\($0.symbol))"
+extension Country: DistanceCaluculatable {
+    var location: CLLocation {
+        guard let lat = latLong.first, let long = latLong.last else {
+            return CLLocation()
         }
 
-        return Country(code: apiCountry.alpha2Code, name: apiCountry.name, area: Int(apiCountry.area),
-                       population: apiCountry.population, capital: apiCountry.capital, region: apiCountry.region,
-                       regionalBlocks: regionalBlocs, languages: languages, currencies: currencies)
+        return CLLocation(latitude: lat, longitude: long)
+    }
+
+    func distance(from otherLocation: CLLocation) -> Double {
+        return location.distance(from: otherLocation)
     }
 }
+

@@ -8,6 +8,9 @@
 
 import CoreLocation
 
+/*
+Application domain model for a country.
+ */
 struct Country {
     let code: String
     let name: String

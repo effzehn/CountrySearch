@@ -8,6 +8,10 @@
 
 import Foundation
 
+/*
+ Service domain models for deserialization.
+ */
+
 struct ApiCountryList: Decodable {
     let countries: [ApiCountry]
 }

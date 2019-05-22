@@ -10,8 +10,8 @@ import UIKit
 
 class CountryService {
 
-    private let restCountryService: RestCountryService
-
+    private let restCountryService: RestCountryServiceProtocol
+    private let locationService: LocationService?
     private let imageService: ImageService
 
     private(set) var countries = [Country]()
@@ -19,13 +19,14 @@ class CountryService {
 
     private var flagImageCache = Dictionary<String, UIImage>()
 
-    init(restCountryService: RestCountryService = RestCountryService(), imageService: ImageService = ImageService()) {
+    init(restCountryService: RestCountryServiceProtocol = RestCountryService(), locationService: LocationService? = LocationService.shared, imageService: ImageService = ImageService()) {
         self.restCountryService = restCountryService
+        self.locationService = locationService
         self.imageService = imageService
     }
 
     var currentCountry: Country? {
-        guard let placemark = LocationService.shared?.placemark, let code = placemark.isoCountryCode else {
+        guard let placemark = locationService?.placemark, let code = placemark.isoCountryCode else {
             return nil
         }
 
@@ -40,7 +41,7 @@ class CountryService {
      of Germany is further than the center of Belgium.
      */
     private func sortCountries() {
-        guard let userLocation = LocationService.shared?.location else {
+        guard let userLocation = locationService?.location else {
             return
         }
 
@@ -80,7 +81,7 @@ class CountryService {
     }
 
     func countriesSortedByDistance(ascending: Bool) -> [Country]? {
-        guard LocationService.shared?.location != nil else {
+        guard locationService?.location != nil else {
             return countries
         }
 

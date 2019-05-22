@@ -78,7 +78,15 @@ private enum RestCountryRequest {
 }
 
 
-struct RestCountryService {
+/*
+ Provides an interface to the Rest Country API
+ */
+
+protocol RestCountryServiceProtocol {
+    func listAll(success: @escaping ([ApiCountry]) -> Void, failure: @escaping (Error?) -> Void)
+}
+
+struct RestCountryService: RestCountryServiceProtocol {
 
     /*
      Search as per requirement that calls on three differen API endpoints.
@@ -113,6 +121,9 @@ struct RestCountryService {
     }
 }
 
+/*
+ Provides an interface to for downloading flags (and possibly other images)
+ */
 struct ImageService {
 
     private let kFlagBaseUrlPath = "https://www.countryflags.io/"

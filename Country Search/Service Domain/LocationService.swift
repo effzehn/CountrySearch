@@ -11,6 +11,10 @@ import CoreLocation
 let kDidUpdateLocationNotification = Notification.Name(rawValue: "didUpdateLocationNotification")
 let kDidUpdatePlacemarkNotification = Notification.Name(rawValue: "didUpdatePlacemarkNotification")
 
+
+/*
+ Provides any needed location(manager)-based functionality to the application domain.
+ */
 class LocationService: NSObject {
 
     static let shared = LocationService()
@@ -71,7 +75,7 @@ extension LocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         debugPrint("Updated location.")
 
-        self.location = locations.last
+        location = locations.last
         if let location = location {
             CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
                 if let error = error {

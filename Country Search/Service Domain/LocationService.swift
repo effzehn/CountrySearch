@@ -73,8 +73,6 @@ class LocationService: NSObject {
 extension LocationService: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        debugPrint("Updated location.")
-
         location = locations.last
         if let location = location {
             CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in

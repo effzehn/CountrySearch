@@ -32,8 +32,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             self.viewModel.reloadAfterUpdate()
         }
 
-        viewModel.update {
-            self.reloadView()
+        viewModel.update { [weak self] in
+            self?.reloadView()
         }
     }
 
@@ -44,7 +44,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        completionHandler(NCUpdateResult.newData)
+        completionHandler(NCUpdateResult.newData) // todo: determine case for noData
     }
 
     private func reloadView() {

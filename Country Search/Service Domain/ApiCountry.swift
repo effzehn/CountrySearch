@@ -58,11 +58,12 @@ extension ApiCountry {
         let mappedLanguages = languages.map {
             return $0.name
         }
+
         let mappedCurrencies = currencies?.map {
             var currencyDescription = ""
 
             if let name = $0.name {
-                currencyDescription.append("\(name) ")
+                currencyDescription.append("\(name): ")
             }
 
             if let code = $0.code {

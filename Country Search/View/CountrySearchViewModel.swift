@@ -34,7 +34,6 @@ struct CountrySearchViewModel {
     }
 
     private var searchResults = [Country]()
-
     private let countryService: CountryService
 
     init(countryService: CountryService = CountryService(), imageService: ImageService = ImageService()) {

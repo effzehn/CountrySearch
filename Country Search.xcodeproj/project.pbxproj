@@ -206,8 +206,8 @@
 			children = (
 				8B020E3E228EFC9800382909 /* CountryServiceTests.swift */,
 				8B13551B2295487C00A47281 /* FakeRestCountryService.swift */,
-				8B020E40228EFC9800382909 /* Info.plist */,
 				8B13551922953D5600A47281 /* FakeLocationService.swift */,
+				8B020E40228EFC9800382909 /* Info.plist */,
 			);
 			path = "Country SearchTests";
 			sourceTree = "<group>";

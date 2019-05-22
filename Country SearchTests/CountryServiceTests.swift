@@ -28,6 +28,13 @@ class CountryServiceTests: XCTestCase {
         XCTAssertTrue(calledCompletion, "A fetch should call the completion closure.")
     }
 
+    func testPerformanceForFetch() {
+        // this will only test deserialization
+        measure {
+            countryService.fetch { _ in }
+        }
+    }
+
     func testCountryForCode() {
         countryService.fetch { _ in }
         XCTAssertEqual(countryService.country(for: "DE")?.code, "DE", "countryForCode should return correct Country.")
@@ -42,7 +49,7 @@ class CountryServiceTests: XCTestCase {
 
     func testPerformanceForSearchCountries() {
         countryService.fetch { _ in}
-        self.measure {
+        measure {
             _ = countryService.searchCountries(for: "eng")
         }
     }

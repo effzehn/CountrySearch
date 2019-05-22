@@ -24,7 +24,9 @@ struct Country {
     let currencies: [String]
 }
 
+
 extension Country: DistanceCaluculatable {
+
     var location: CLLocation {
         guard let lat = latLong.first, let long = latLong.last else {
             return CLLocation()

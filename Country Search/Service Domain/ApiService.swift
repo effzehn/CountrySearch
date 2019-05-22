@@ -79,7 +79,7 @@ private enum RestCountryRequest {
 
 
 /*
- Provides an interface to the Rest Country API
+ Provides an interface to the Rest Country API. Todo: Look for better name, remove protocol suffix
  */
 
 protocol RestCountryServiceProtocol {
@@ -131,8 +131,8 @@ struct ImageService {
     func fetchFlagImage(for code: String, completion: @escaping (UIImage) -> Void) {
         if let baseUrl = URL(string: kFlagBaseUrlPath) {
             if let url = URL(string: "\(code.lowercased())/flat/64.png", relativeTo: baseUrl) {
-            fetchImage(from: url, completion: completion)
-        }
+                fetchImage(from: url, completion: completion)
+            }
         }
     }
 

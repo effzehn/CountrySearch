@@ -26,6 +26,25 @@
 		8B4D50FD2291ED490027AA01 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D50FC2291ED490027AA01 /* Protocols.swift */; };
 		8B4D50FE2291EEEE0027AA01 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D50FC2291ED490027AA01 /* Protocols.swift */; };
 		8B4D50FF2291EEEF0027AA01 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D50FC2291ED490027AA01 /* Protocols.swift */; };
+		8B4D51072294738A0027AA01 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4D51062294738A0027AA01 /* NotificationCenter.framework */; };
+		8B4D510A2294738A0027AA01 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D51092294738A0027AA01 /* TodayViewController.swift */; };
+		8B4D510D2294738A0027AA01 /* CurrentCountry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4D510B2294738A0027AA01 /* CurrentCountry.storyboard */; };
+		8B4D51112294738A0027AA01 /* CurrentCountryWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B4D51042294738A0027AA01 /* CurrentCountryWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B4D5116229473F60027AA01 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA8A8E22918FDE00E536D1 /* CountryService.swift */; };
+		8B4D5117229473FA0027AA01 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E2F228F08DB00E21AE0 /* Country.swift */; };
+		8B4D5118229473FD0027AA01 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D50FC2291ED490027AA01 /* Protocols.swift */; };
+		8B4D5119229474130027AA01 /* ApiCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */; };
+		8B4D511A229474160027AA01 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D5E38228F0BC000E21AE0 /* ApiService.swift */; };
+		8B4D511B229474190027AA01 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA8A8A22918AFC00E536D1 /* LocationService.swift */; };
+		8B4D511D229474720027AA01 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D511C229474720027AA01 /* TodayViewModel.swift */; };
+		8B4D511F229481090027AA01 /* CurrentCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D511E229481090027AA01 /* CurrentCountryViewController.swift */; };
+		8B4D5120229481090027AA01 /* CurrentCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D511E229481090027AA01 /* CurrentCountryViewController.swift */; };
+		8B4D5121229481090027AA01 /* CurrentCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D511E229481090027AA01 /* CurrentCountryViewController.swift */; };
+		8B4D5122229481090027AA01 /* CurrentCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D511E229481090027AA01 /* CurrentCountryViewController.swift */; };
+		8B4D51242294867D0027AA01 /* TodayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4D51232294867D0027AA01 /* TodayViewController.storyboard */; };
+		8B4D5125229488B20027AA01 /* CurrentCountry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4D510B2294738A0027AA01 /* CurrentCountry.storyboard */; };
+		8B4D5126229488B40027AA01 /* CurrentCountry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4D510B2294738A0027AA01 /* CurrentCountry.storyboard */; };
+		8B4D5127229488B50027AA01 /* CurrentCountry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4D510B2294738A0027AA01 /* CurrentCountry.storyboard */; };
 		8BFA8A872291898900E536D1 /* CountrySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA8A862291898900E536D1 /* CountrySearchViewModel.swift */; };
 		8BFA8A882291898900E536D1 /* CountrySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA8A862291898900E536D1 /* CountrySearchViewModel.swift */; };
 		8BFA8A892291898900E536D1 /* CountrySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA8A862291898900E536D1 /* CountrySearchViewModel.swift */; };
@@ -52,7 +71,28 @@
 			remoteGlobalIDString = 8B020E25228EFC9700382909;
 			remoteInfo = "Country Search";
 		};
+		8B4D510F2294738A0027AA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B020E1E228EFC9700382909 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4D51032294738A0027AA01;
+			remoteInfo = CurrentCountryWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B4D51152294738A0027AA01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B4D51112294738A0027AA01 /* CurrentCountryWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B020E26228EFC9700382909 /* Country Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +112,14 @@
 		8B3D5E34228F08FD00E21AE0 /* ApiCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCountry.swift; sourceTree = "<group>"; };
 		8B3D5E38228F0BC000E21AE0 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		8B4D50FC2291ED490027AA01 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		8B4D51042294738A0027AA01 /* CurrentCountryWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CurrentCountryWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4D51062294738A0027AA01 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8B4D51092294738A0027AA01 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		8B4D510C2294738A0027AA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CurrentCountry.storyboard; sourceTree = "<group>"; };
+		8B4D510E2294738A0027AA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4D511C229474720027AA01 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		8B4D511E229481090027AA01 /* CurrentCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCountryViewController.swift; sourceTree = "<group>"; };
+		8B4D51232294867D0027AA01 /* TodayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodayViewController.storyboard; sourceTree = "<group>"; };
 		8BFA8A862291898900E536D1 /* CountrySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchViewModel.swift; sourceTree = "<group>"; };
 		8BFA8A8A22918AFC00E536D1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		8BFA8A8E22918FDE00E536D1 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
@@ -99,6 +147,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B4D51012294738A0027AA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4D51072294738A0027AA01 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +164,8 @@
 				8B020E28228EFC9700382909 /* Country Search */,
 				8B020E3D228EFC9800382909 /* Country SearchTests */,
 				8B020E48228EFC9800382909 /* Country SearchUITests */,
+				8B4D51082294738A0027AA01 /* CurrentCountryWidget */,
+				8B4D51052294738A0027AA01 /* Frameworks */,
 				8B020E27228EFC9700382909 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +176,7 @@
 				8B020E26228EFC9700382909 /* Country Search.app */,
 				8B020E3A228EFC9800382909 /* Country SearchTests.xctest */,
 				8B020E45228EFC9800382909 /* Country SearchUITests.xctest */,
+				8B4D51042294738A0027AA01 /* CurrentCountryWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +189,7 @@
 				8B3D5E2D228F087900E21AE0 /* Service Domain */,
 				8B020E29228EFC9700382909 /* AppDelegate.swift */,
 				8B020E2D228EFC9700382909 /* Main.storyboard */,
+				8B4D510B2294738A0027AA01 /* CurrentCountry.storyboard */,
 				8B020E30228EFC9800382909 /* Assets.xcassets */,
 				8B020E32228EFC9800382909 /* LaunchScreen.storyboard */,
 				8B020E35228EFC9800382909 /* Info.plist */,
@@ -175,11 +235,31 @@
 			path = "Application Domain";
 			sourceTree = "<group>";
 		};
+		8B4D51052294738A0027AA01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B4D51062294738A0027AA01 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B4D51082294738A0027AA01 /* CurrentCountryWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8B4D51092294738A0027AA01 /* TodayViewController.swift */,
+				8B4D511C229474720027AA01 /* TodayViewModel.swift */,
+				8B4D51232294867D0027AA01 /* TodayViewController.storyboard */,
+				8B4D510E2294738A0027AA01 /* Info.plist */,
+			);
+			path = CurrentCountryWidget;
+			sourceTree = "<group>";
+		};
 		8BFA8A852291892C00E536D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8B020E2B228EFC9700382909 /* CountrySearchTableViewController.swift */,
 				8BFA8A862291898900E536D1 /* CountrySearchViewModel.swift */,
+				8B4D511E229481090027AA01 /* CurrentCountryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,10 +274,12 @@
 				8B020E22228EFC9700382909 /* Sources */,
 				8B020E23228EFC9700382909 /* Frameworks */,
 				8B020E24228EFC9700382909 /* Resources */,
+				8B4D51152294738A0027AA01 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B4D51102294738A0027AA01 /* PBXTargetDependency */,
 			);
 			name = "Country Search";
 			productName = "Country Search";
@@ -240,6 +322,23 @@
 			productReference = 8B020E45228EFC9800382909 /* Country SearchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8B4D51032294738A0027AA01 /* CurrentCountryWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4D51122294738A0027AA01 /* Build configuration list for PBXNativeTarget "CurrentCountryWidget" */;
+			buildPhases = (
+				8B4D51002294738A0027AA01 /* Sources */,
+				8B4D51012294738A0027AA01 /* Frameworks */,
+				8B4D51022294738A0027AA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrentCountryWidget;
+			productName = CurrentCountryWidget;
+			productReference = 8B4D51042294738A0027AA01 /* CurrentCountryWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,6 +360,9 @@
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 8B020E25228EFC9700382909;
 					};
+					8B4D51032294738A0027AA01 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 				};
 			};
 			buildConfigurationList = 8B020E21228EFC9700382909 /* Build configuration list for PBXProject "Country Search" */;
@@ -279,6 +381,7 @@
 				8B020E25228EFC9700382909 /* Country Search */,
 				8B020E39228EFC9800382909 /* Country SearchTests */,
 				8B020E44228EFC9800382909 /* Country SearchUITests */,
+				8B4D51032294738A0027AA01 /* CurrentCountryWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +394,7 @@
 				8B020E34228EFC9800382909 /* LaunchScreen.storyboard in Resources */,
 				8B020E31228EFC9800382909 /* Assets.xcassets in Resources */,
 				8B020E2F228EFC9700382909 /* Main.storyboard in Resources */,
+				8B4D5125229488B20027AA01 /* CurrentCountry.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4D5126229488B40027AA01 /* CurrentCountry.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +410,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4D5127229488B50027AA01 /* CurrentCountry.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4D51022294738A0027AA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4D510D2294738A0027AA01 /* CurrentCountry.storyboard in Resources */,
+				8B4D51242294867D0027AA01 /* TodayViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +433,7 @@
 				8BFA8A8B22918AFC00E536D1 /* LocationService.swift in Sources */,
 				8B020E2C228EFC9700382909 /* CountrySearchTableViewController.swift in Sources */,
 				8BFA8A872291898900E536D1 /* CountrySearchViewModel.swift in Sources */,
+				8B4D511F229481090027AA01 /* CurrentCountryViewController.swift in Sources */,
 				8B3D5E35228F08FD00E21AE0 /* ApiCountry.swift in Sources */,
 				8BFA8A8F22918FDE00E536D1 /* CountryService.swift in Sources */,
 				8B3D5E39228F0BC000E21AE0 /* ApiService.swift in Sources */,
@@ -335,6 +451,7 @@
 				8B3D5E3A228F0BC000E21AE0 /* ApiService.swift in Sources */,
 				8BFA8A9022918FDE00E536D1 /* CountryService.swift in Sources */,
 				8B020E3F228EFC9800382909 /* Country_SearchTests.swift in Sources */,
+				8B4D5120229481090027AA01 /* CurrentCountryViewController.swift in Sources */,
 				8B3D5E36228F08FD00E21AE0 /* ApiCountry.swift in Sources */,
 				8BFA8A8C22918AFC00E536D1 /* LocationService.swift in Sources */,
 				8BFA8A882291898900E536D1 /* CountrySearchViewModel.swift in Sources */,
@@ -350,10 +467,27 @@
 				8B3D5E3B228F0BC000E21AE0 /* ApiService.swift in Sources */,
 				8BFA8A9122918FDE00E536D1 /* CountryService.swift in Sources */,
 				8B020E4A228EFC9800382909 /* Country_SearchUITests.swift in Sources */,
+				8B4D5121229481090027AA01 /* CurrentCountryViewController.swift in Sources */,
 				8B3D5E37228F08FD00E21AE0 /* ApiCountry.swift in Sources */,
 				8BFA8A8D22918AFC00E536D1 /* LocationService.swift in Sources */,
 				8BFA8A892291898900E536D1 /* CountrySearchViewModel.swift in Sources */,
 				8B4D50FF2291EEEF0027AA01 /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4D51002294738A0027AA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4D511B229474190027AA01 /* LocationService.swift in Sources */,
+				8B4D5116229473F60027AA01 /* CountryService.swift in Sources */,
+				8B4D5117229473FA0027AA01 /* Country.swift in Sources */,
+				8B4D511A229474160027AA01 /* ApiService.swift in Sources */,
+				8B4D5122229481090027AA01 /* CurrentCountryViewController.swift in Sources */,
+				8B4D511D229474720027AA01 /* TodayViewModel.swift in Sources */,
+				8B4D510A2294738A0027AA01 /* TodayViewController.swift in Sources */,
+				8B4D5118229473FD0027AA01 /* Protocols.swift in Sources */,
+				8B4D5119229474130027AA01 /* ApiCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +503,11 @@
 			isa = PBXTargetDependency;
 			target = 8B020E25228EFC9700382909 /* Country Search */;
 			targetProxy = 8B020E46228EFC9800382909 /* PBXContainerItemProxy */;
+		};
+		8B4D51102294738A0027AA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4D51032294738A0027AA01 /* CurrentCountryWidget */;
+			targetProxy = 8B4D510F2294738A0027AA01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,6 +526,14 @@
 				8B020E33228EFC9800382909 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B4D510B2294738A0027AA01 /* CurrentCountry.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B4D510C2294738A0027AA01 /* Base */,
+			);
+			name = CurrentCountry.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -511,6 +658,7 @@
 		8B020E4F228EFC9800382909 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJA7SA672K;
@@ -529,6 +677,7 @@
 		8B020E50228EFC9800382909 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJA7SA672K;
@@ -626,6 +775,44 @@
 			};
 			name = Release;
 		};
+		8B4D51132294738A0027AA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BJA7SA672K;
+				INFOPLIST_FILE = CurrentCountryWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahoffmann.Country-Search.CurrentCountryWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B4D51142294738A0027AA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BJA7SA672K;
+				INFOPLIST_FILE = CurrentCountryWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahoffmann.Country-Search.CurrentCountryWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,6 +848,15 @@
 			buildConfigurations = (
 				8B020E55228EFC9800382909 /* Debug */,
 				8B020E56228EFC9800382909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B4D51122294738A0027AA01 /* Build configuration list for PBXNativeTarget "CurrentCountryWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4D51132294738A0027AA01 /* Debug */,
+				8B4D51142294738A0027AA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

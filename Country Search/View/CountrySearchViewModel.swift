@@ -72,7 +72,11 @@ struct CountrySearchViewModel {
             return
         }
 
-        countryService.flagImage(for: country.code) { image in
+        flagImage(for: country.code, completion: completion)
+    }
+
+    func flagImage(for countryCode: String, completion: @escaping (UIImage) -> Void) {
+        countryService.flagImage(for: countryCode) { image in
             completion(image)
         }
     }

@@ -25,11 +25,7 @@ class CountryService {
     }
 
     var currentCountry: Country? {
-        guard let placemark = LocationService.shared?.placemark else {
-            return nil
-        }
-
-        guard let code = placemark.isoCountryCode else {
+        guard let placemark = LocationService.shared?.placemark, let code = placemark.isoCountryCode else {
             return nil
         }
 

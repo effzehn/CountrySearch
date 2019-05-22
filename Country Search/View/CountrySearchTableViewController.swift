@@ -12,6 +12,9 @@ private let kCCellReuseIdentifier = "CountryCellIdentifier"
 
 class CountrySearchTableViewController: UITableViewController {
 
+    private let kEmbedSegue = "ccEmbedSegue"
+    private var currentCountryViewController: CurrentCountryViewController?
+
     @IBOutlet var orderBarButton: UIBarButtonItem?
 
     var viewModel = CountrySearchViewModel()
@@ -44,7 +47,7 @@ class CountrySearchTableViewController: UITableViewController {
 
         NotificationCenter.default.addObserver(forName: kDidUpdatePlacemarkNotification, object: nil, queue: nil) { _ in
             self.tableView.reloadData()
-            debugPrint("\(self.viewModel.currentCountry?.name ?? "")")
+            self.reloadCountryViewHeader()
         }
     }
 
@@ -65,6 +68,16 @@ class CountrySearchTableViewController: UITableViewController {
         navigationItem.searchController = searchController
     }
 
+    private func reloadCountryViewHeader() {
+        self.currentCountryViewController?.country = self.viewModel.currentCountry
+        if let code = self.viewModel.currentCountry?.code {
+            viewModel.flagImage(for: code, completion: { image in
+                DispatchQueue.main.async {
+                    self.currentCountryViewController?.flagView?.image = image
+                }
+            })
+        }
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: kCCellReuseIdentifier) {
@@ -75,6 +88,7 @@ class CountrySearchTableViewController: UITableViewController {
             cell.textLabel?.text = country.name
             cell.detailTextLabel?.text = "Pop: \(country.population) – Size: \(country.area) km2"
 
+            cell.imageView?.image = nil
             viewModel.flagImage(for: indexPath) { image in
                 DispatchQueue.main.async {
                     if let cell = tableView.cellForRow(at: indexPath) {
@@ -99,6 +113,14 @@ class CountrySearchTableViewController: UITableViewController {
         tableView.reloadData()
 
         orderBarButton?.title = viewModel.orderButtonTitle
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        if segue.identifier == kEmbedSegue {
+            currentCountryViewController = segue.destination as? CurrentCountryViewController
+        }
     }
 }
 

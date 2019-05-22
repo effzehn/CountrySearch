@@ -36,6 +36,7 @@ class LocationService: NSObject {
         }
 
         self.locationManager = locationManager
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         super.init()
 
         locationAuthorization()
@@ -70,8 +71,7 @@ extension LocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         debugPrint("Updated location.")
 
-        self.location = manager.location
-
+        self.location = locations.last
         if let location = location {
             CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
                 if let error = error {

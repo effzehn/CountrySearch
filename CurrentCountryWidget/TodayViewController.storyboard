@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ln9-sE-cdH">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="gwT-qd-JS8">
+            <objects>
+                <viewController id="ln9-sE-cdH" customClass="TodayViewController" customModule="CurrentCountryWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="9It-ov-0IB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E34-9e-0IC">
+                                <rect key="frame" x="0.0" y="44" width="320" height="162"/>
+                                <connections>
+                                    <segue destination="VYZ-tn-myE" kind="embed" identifier="twEmbedSegue" id="9U3-gZ-IBn"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rVl-tx-aB2" firstAttribute="bottom" secondItem="E34-9e-0IC" secondAttribute="bottom" id="0Pp-wQ-XwN"/>
+                            <constraint firstItem="rVl-tx-aB2" firstAttribute="trailing" secondItem="E34-9e-0IC" secondAttribute="trailing" id="15q-63-nQy"/>
+                            <constraint firstItem="E34-9e-0IC" firstAttribute="leading" secondItem="rVl-tx-aB2" secondAttribute="leading" id="aNE-V7-GY0"/>
+                            <constraint firstItem="E34-9e-0IC" firstAttribute="top" secondItem="rVl-tx-aB2" secondAttribute="top" id="hKG-pJ-ZMB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rVl-tx-aB2"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="240"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rue-aG-geF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="-137"/>
+        </scene>
+        <!--CurrentCountry-->
+        <scene sceneID="Gqy-Un-Dc6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CurrentCountry" id="VYZ-tn-myE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctE-IY-eYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="-138"/>
+        </scene>
+    </scenes>
+</document>

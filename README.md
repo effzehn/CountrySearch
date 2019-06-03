@@ -28,6 +28,9 @@ the flag (if present), population and area size
   * Language
   * Currency
   
+### Requirements
+The challenge solution has been implemented for iOS 12 in Swift 5.
+  
 ### Author's notes
 * Flagpedia seemed to be unreliable for some country codes, also it seemed to forward me to non TLS-pages, so I went with countryflags.io. Returns 64px only but it does the job. I also thought about just using emojis but I guess you want to see how I handle image loading ;-)
 
@@ -47,4 +50,7 @@ the flag (if present), population and area size
 
 * when it comes to localizing the widget is slow, also this is my first today widget.
 
-* there is always room to improve but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, the given specs should be satisfied, it is not a final product though
+* there is always room to improve but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, the given specs should be satisfied, it is not a final product though.
+
+### Copyright & License
+Copyright (c) 2019 Andre Hoffmann - Released under the MIT license.

@@ -31,25 +31,25 @@ the flag (if present), population and area size
 ---
   
 ### Author's notes
-* Flagpedia seemed to be unreliable for some country codes, also it seemed to forward me to non TLS-pages, so I went with countryflags.io. Returns 64px only but it does the job. I also thought about just using emojis but I guess you want to see how I handle image loading ;-)
+* Flagpedia seemed to be unreliable for some country codes, also it seemed to forward me to non TLS-pages, so I went with countryflags.io. Their API returns 64px only but it does the job. I also thought about just using emojis but I guess you want to see how I handle image loading ;-)
 
 * I used CLGeocoder for the current user location because of reliability issues (see my remark in CountryService.swift)
 
-* the search results are not necessarily order by distance. using a predicate driven search would be more interesting but also more complex so I kept it simple.
+* the search results are not necessarily ordered by distance. Using a predicate driven search would be more interesting and a next step of improvement.
 
-* the order button could be replaced by an alphabetical ordering button when no location is available (instead ob being useless)
+* in another next step the order navbar item could be replaced by an alphabetical ordering button when no location is available (instead ob being useless).
 
-* the current country only shows the first language in a collection of languages, same with the currency
+* the current country only shows the first language in a collection of languages, same with the currency.
 
-* the app is not internationalized
+* the app is not internationalized.
 
-* I partially covered one class to show possible tests and a rough approach to how I test
+* I partially covered one class to show possible tests and a rough approach to how I test.
 
-* all errors happen silently at this point with debug messages at most
+* all errors happen silently at this point with debug messages at most.
 
-* when it comes to localizing the widget is slow, also this is my first today widget.
+* when it comes to localizing the device the widget is quite sluggish.
 
-* there is always room to improve but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, the given specs should be satisfied, it is not a final product though.
+There is always room to improve but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, the given specs should be satisfied, it is not a final product though. Some of the mentioned points are stages where the specs do not describe the correct approach. Within a development/product team those would be issues raised directly to the PO/PM or UIXD for further discussion.
 
 ---
 

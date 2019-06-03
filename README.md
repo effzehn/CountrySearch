@@ -1,7 +1,7 @@
 # CountrySearch
-A coding challenge solution
+A coding challenge solution for iOS 12.
 
-Given the following task:
+_Given the following task_
 As a user, I want to see which country I’m currently in from the app and in the today widget. Additionally I should be able to search for a country using free text, capital city or language code sorted closest/furthest to my current location.
 
 ### Technical Details
@@ -27,8 +27,6 @@ the flag (if present), population and area size
   * Regional blocks
   * Language
   * Currency
-  
----
   
 ### Author's notes
 * Flagpedia seemed to be unreliable for some country codes, also it seemed to forward me to non TLS-pages, so I went with countryflags.io. Their API returns 64px only but it does the job. I also thought about just using emojis but I guess you want to see how I handle image loading ;-)

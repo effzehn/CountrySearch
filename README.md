@@ -48,7 +48,7 @@ the flag (if present), population and area size
 
 * when it comes to localizing the device the widget is quite sluggish.
 
-There is always room to improve but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, the given specs should be satisfied, it is not a final product though. Some of the mentioned points are stages where the specs do not describe the correct approach. Within a development/product team those would be issues raised directly to the PO/PM or UIXD for further discussion.
+There is always room for improvement but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, however the given specs should be satisfied but it is not a final product though. Some of the mentioned points are stages where the specs do not describe the correct approach. Within a development/product team those would be issues raised directly to the PO/PM or UIXD for further discussion.
 
 ---
 

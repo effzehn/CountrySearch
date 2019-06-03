@@ -2,6 +2,7 @@
 A coding challenge solution for iOS 12.
 
 _Given the following task_
+
 As a user, I want to see which country I’m currently in from the app and in the today widget. Additionally I should be able to search for a country using free text, capital city or language code sorted closest/furthest to my current location.
 
 ### Technical Details

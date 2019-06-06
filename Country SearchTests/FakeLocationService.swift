@@ -10,14 +10,23 @@ import CoreLocation
 import Intents
 import Contacts
 
-class FakeLocationService: LocationService {
+class FakeLocationService: LocationServicable {
+    var location: CLLocation?
+
+    var placemark: CLPlacemark?
+
+    func updateLocation() {}
+
+    func locationAuthorization() {}
+
+    private let locationManager = FakeLocationmanager()
+
 
     init() {
-        super.init(locationManager: FakeLocationmanager())!
         createPlacemark()
     }
 
-    func createPlacemark() {
+    private func createPlacemark() {
         location = CLLocation(latitude: 52.519143, longitude: 13.407476) // Berlin
 
         let address = CNMutablePostalAddress()

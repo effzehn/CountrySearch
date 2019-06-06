@@ -8,18 +8,20 @@
 
 import UIKit
 
-class CountryService {
+final class CountryService {
 
-    private let restCountryService: RestCountryServiceProtocol
-    private let locationService: LocationService?
-    private let imageService: ImageService
+    private let restCountryService: RestCountryServiceable
+    private let locationService: LocationServicable?
+    private let imageService: ImageServiceable
 
     private(set) var countries = [Country]()
     private var sortedCountries: [Country]?
 
     private var flagImageCache = Dictionary<String, UIImage>()
 
-    init(restCountryService: RestCountryServiceProtocol = RestCountryService(), locationService: LocationService? = LocationService.shared, imageService: ImageService = ImageService()) {
+    init(restCountryService: RestCountryServiceable = RestCountryService(),
+         locationService: LocationServicable? = LocationService.shared,
+         imageService: ImageServiceable = ImageService()) {
         self.restCountryService = restCountryService
         self.locationService = locationService
         self.imageService = imageService

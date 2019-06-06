@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FakeRestCountryService: RestCountryServiceProtocol {
+struct FakeRestCountryService: RestCountryServiceable {
 
     func listAll(success: @escaping ([ApiCountry]) -> Void, failure: @escaping (Error?) -> Void) {
         let list = try! JSONDecoder().decode([ApiCountry].self, from: json.data(using: .utf8)!)

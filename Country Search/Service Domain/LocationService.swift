@@ -15,11 +15,19 @@ let kDidUpdatePlacemarkNotification = Notification.Name(rawValue: "didUpdatePlac
 /*
  Provides any needed location(manager)-based functionality to the application domain.
  */
-class LocationService: NSObject {
+protocol LocationServicable {
+    var location: CLLocation? { get set }
+    var placemark: CLPlacemark? { get set }
+
+    func updateLocation()
+    func locationAuthorization()
+}
+
+final class LocationService: NSObject, LocationServicable {
 
     static let shared = LocationService()
 
-    private var locationManager: CLLocationManager
+    private let locationManager: CLLocationManager
     private var authorized: Bool = false
 
     var location: CLLocation? {

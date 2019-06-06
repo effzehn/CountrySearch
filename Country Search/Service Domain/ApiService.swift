@@ -79,14 +79,13 @@ private enum RestCountryRequest {
 
 
 /*
- Provides an interface to the Rest Country API. Todo: Look for better name, remove protocol suffix
+ Provides an interface to the Rest Country API.
  */
-
-protocol RestCountryServiceProtocol {
+protocol RestCountryServiceable {
     func listAll(success: @escaping ([ApiCountry]) -> Void, failure: @escaping (Error?) -> Void)
 }
 
-struct RestCountryService: RestCountryServiceProtocol {
+struct RestCountryService: RestCountryServiceable {
 
     /*
      Search as per requirement that calls on three differen API endpoints.
@@ -124,7 +123,12 @@ struct RestCountryService: RestCountryServiceProtocol {
 /*
  Provides an interface to for downloading flags (and possibly other images)
  */
-struct ImageService {
+protocol ImageServiceable {
+    func fetchFlagImage(for code: String, completion: @escaping (UIImage) -> Void)
+    func fetchImage(from url: URL, completion: @escaping (UIImage) -> Void)
+}
+
+struct ImageService: ImageServiceable {
 
     private let kFlagBaseUrlPath = "https://www.countryflags.io/"
 
@@ -137,7 +141,6 @@ struct ImageService {
     }
 
     func fetchImage(from url: URL, completion: @escaping (UIImage) -> Void) {
-
         let session = URLSession.shared
 
         session.dataTask(with: url) { (data, response, error) in

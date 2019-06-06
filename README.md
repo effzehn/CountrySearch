@@ -50,6 +50,9 @@ the flag (if present), population and area size
 
 There is always room for improvement but I think I would’ve easily gotten overboard since this task was comprehensive for a coding challenge as it is, however the given specs should be satisfied but it is not a final product though. Some of the mentioned points are stages where the specs do not describe the correct approach. Within a development/product team those would be issues raised directly to the PO/PM or UIXD for further discussion.
 
+### Known Issues
+* the today widget does not change the state correctly
+
 ---
 
 ### Requirements
